@@ -2,13 +2,13 @@ import { mobileUI } from "../assets";
 import styles, { layout } from "../style";
 import Button from "./Button";
 
-const CardDeal = () => (
-  <section className={layout.section}>
+const ManageLibrary = () => (
+  <section id="mobile" className={layout.section}>
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>Easily manage your game library</h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
         Haze makes it easy to keep track of your games and stay up-to-date with
-        the latest releases. Our intuitive interface lets you organize your
+        our intuitive mobile app. Our modern interface lets you organize your
         library and quickly find the games you want to play.
       </p>
 
@@ -26,4 +26,4 @@ const CardDeal = () => (
   </section>
 );
 
-export default CardDeal;
+export default ManageLibrary;

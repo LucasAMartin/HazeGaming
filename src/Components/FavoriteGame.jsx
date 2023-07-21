@@ -1,7 +1,7 @@
 import { apple, ui, google } from "../assets";
 import styles, { layout } from "../style";
 
-const Billing = () => (
+const FavoriteGame = () => (
   <section id="product" className={layout.sectionReverse}>
     <div className={layout.sectionImgReverse}>
       <img
@@ -42,4 +42,4 @@ const Billing = () => (
   </section>
 );
 
-export default Billing;
+export default FavoriteGame;
