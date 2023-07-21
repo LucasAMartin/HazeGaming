@@ -1,4 +1,5 @@
 import styles from "./style";
+import { Link } from 'react-router-dom';
 import { FavoriteGame, Business, ManageLibrary, Clients, CTA, Footer, Navbar, Stats, Testimonials, Hero } from "./components";
 
 const App = () => (
