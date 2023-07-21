@@ -1,9 +1,17 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 
-const Button = ({ styles }) => (
-  <button type="button" className={`py-4 px-6 font-poppins font-medium text-[18px] text-primary bg-purple-gradient hover:text-white rounded-[10px] mt-10 transition-colors duration-250 ${styles}`}>
-    Get Started
-  </button>
-);
+const Button = ({ styles }) => {
+  const navigate = useNavigate();
+  return (
+    <button
+      type="button"
+      className={`py-4 px-6 font-poppins font-medium text-[18px] text-primary bg-purple-gradient hover:text-white rounded-[10px] mt-10 transition-colors duration-250 ${styles}`}
+      onClick={() => navigate('/haze')}
+    >
+      Get Started
+    </button>
+  );
+};
 
 export default Button;
