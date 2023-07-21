@@ -5,13 +5,11 @@ import Button from "./Button";
 const CardDeal = () => (
   <section className={layout.section}>
     <div className={layout.sectionInfo}>
-      <h2 className={styles.heading2}>
-        Find a better card deal <br className="sm:block hidden" /> in few easy
-        steps.
-      </h2>
+      <h2 className={styles.heading2}>Easily manage your game library</h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Arcu tortor, purus in mattis at sed integer faucibus. Aliquet quis
-        aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau.
+        Haze makes it easy to keep track of your games and stay up-to-date with
+        the latest releases. Our intuitive interface lets you organize your
+        library and quickly find the games you want to play.
       </p>
 
       <Button styles={`mt-10`} />

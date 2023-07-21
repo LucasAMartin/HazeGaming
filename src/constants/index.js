@@ -23,9 +23,9 @@ export const features = [
   {
     id: "feature-1",
     icon: star,
-    title: "Rewards",
+    title: "Community",
     content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
+      "Join a vibrant community of gamers and connect with friends old and new.",
   },
   {
     id: "feature-2",
@@ -37,9 +37,9 @@ export const features = [
   {
     id: "feature-3",
     icon: send,
-    title: "Balance Transfer",
+    title: "Dedicated Servers",
     content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
+      "Experience seamless gameplay on our dedicated servers.",
   },
 ];
 
@@ -73,18 +73,18 @@ export const feedback = [
 export const stats = [
   {
     id: "stats-1",
-    title: "User Active",
-    value: "3800+",
+    title: "Active Users",
+    value: "600K+",
   },
   {
     id: "stats-2",
-    title: "Trusted by Company",
-    value: "230+",
+    title: "Games",
+    value: "25K+",
   },
   {
     id: "stats-3",
-    title: "Transaction",
-    value: "$230M+",
+    title: "Trusted Developers",
+    value: "9000+",
   },
 ];
 

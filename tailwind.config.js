@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').Config} */
+// tailwind.config.js
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   mode: "jit",
@@ -21,6 +21,11 @@ module.exports = {
       md: "1060px",
       lg: "1200px",
       xl: "1700px",
+    },
+  },
+  variants: {
+    extend: {
+      textColor: ['group-hover'],
     },
   },
   plugins: [],
