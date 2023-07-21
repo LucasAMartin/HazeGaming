@@ -47,25 +47,25 @@ export const feedback = [
   {
     id: "feedback-1",
     content:
-      "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
-    name: "Herman Jensen",
-    title: "Founder & Leader",
+      "Haze has completely changed the way I game. It's so easy to find and purchase new games, and the community is amazing.",
+    name: "Hannah Ramirez",
+    title: "Casual Gamer",
     img: people01,
   },
   {
     id: "feedback-2",
     content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
-    name: "Steve Mark",
-    title: "Founder & Leader",
+      "I love being able to connect with friends on Haze and play together on their dedicated servers. It's a game-changer.",
+    name: "Bobson John",
+    title: "Professional Gamer",
     img: people02,
   },
   {
     id: "feedback-3",
     content:
-      "It is usually people in the money business, finance, and international trade that are really rich.",
-    name: "Kenn Gallagher",
-    title: "Founder & Leader",
+      "The selection of games on Haze is incredible. I've discovered so many new titles that I never would have found otherwise.",
+    name: "Bob Johnson",
+    title: "Father of 4 beautiful children",
     img: people03,
   },
 ];

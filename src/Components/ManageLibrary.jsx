@@ -1,4 +1,4 @@
-import { card } from "../assets";
+import { mobileUI } from "../assets";
 import styles, { layout } from "../style";
 import Button from "./Button";
 
@@ -16,7 +16,12 @@ const CardDeal = () => (
     </div>
 
     <div className={layout.sectionImg}>
-      <img src={card} alt="billing" className="w-[100%] h-[100%]" />
+      <img src={mobileUI} alt="billing" className="w-[100%] z-10" />
+      {/* gradient start */}
+      <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
+        <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
+        <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 purple__gradient" />
+        {/* gradient end */}
     </div>
   </section>
 );
