@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 const Button = ({ styles }) => {
   const navigate = useNavigate();
+  
   return (
     <button
       type="button"

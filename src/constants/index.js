@@ -23,6 +23,29 @@ export const navLinks = [
   },
 ];
 
+export const sidebarLinks = [
+  {
+    id: "home",
+    title: "Home",
+  },
+  {
+    id: "categories",
+    title: "Categories",
+  },
+  {
+    id: "new",
+    title: "New",
+  },
+  {
+    id: "points",
+    title: "Points Shop",
+  },
+  {
+    id: "lab",
+    title: "Lab",
+  },
+];
+
 export const features = [
   {
     id: "feature-1",
