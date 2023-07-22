@@ -1,5 +1,8 @@
 import React from "react";
 import { Responsive, WidthProvider } from "react-grid-layout";
+import 'react-grid-layout/css/styles.css';
+import 'react-resizable/css/styles.css';
+
 
 const ResponsiveGridLayout = WidthProvider(Responsive);
 
@@ -7,22 +10,20 @@ const GameDisplay = () => (
   <div className="bg-gray-400 rounded-lg w-full h-full" />
 );
 
-const MyFirstGrid = () => {
+const Grid = () => {
   const layout = [
-    { i: "a", x: 0, y: 0, w: 1, h: 2 },
-    { i: "b", x: 1, y: 0, w: 3, h: 2 },
-    { i: "c", x: 4, y: 0, w: 1, h: 2 },
-    { i: "d", x: 0, y: 2, w: 2, h: 2 },
-    { i: "e", x: 2, y: 2, w: 2, h: 2 },
-    { i: "f", x: 4, y: 2, w: 1, h: 1 },
-    { i: "g", x: 4, y: 3, w: 1, h: 1 },
-    { i: "h", x: 5, y: 0, w: 1, h: 4 },
-    { i: "i", x: 6, y: 0, w: 2, h: 4 },
-    { i: "j", x: 8, y: 0, w: 4, h: 4 },
-    { i:"k",x :0 ,y :4 ,w :12 ,h :1}
-    
+    { i: "a", x: 0, y: 0, w: 8, h: 2 },
+    { i: "b", x: 8, y: 0, w: 8, h: 2 },
+    { i: "c", x: 0, y: 2, w: 4, h: 2 },
+    { i: "d", x: 4, y: 2, w: 4, h: 2 },
+    { i: "e", x: 8, y: 2, w: 4, h: 2 },
+    { i: "f", x: 12, y: 2, w: 4, h: 2 },
+    { i: "g", x: 2, y: 4, w: 2, h: 1 },
+    { i: "h", x: 4, y: 4, w: 2, h: 1 },
+    { i: "i", x: 6, y: 4, w: 2, h: 1 },
+    { i: "j", x: 8, y: 4, w: 2, h: 1 }
+  ];
   
-];
   
 return (
     
@@ -30,20 +31,21 @@ return (
 className="layout"
 layouts={{ lg : layout }}
 breakpoints={{ lg :1200 }}
-cols={{ lg :12 }}
-rowHeight={30}
+cols={{ lg :16 }}
+rowHeight={160}
 margin={[10 ,10 ]}
+isBounded={true}
 >
 <div key="a">
-<GameDisplay />
-</div>
-<div key="b">
 <GameDisplay />
 </div>
 <div key="c">
 <GameDisplay />
 </div>
 <div key="d">
+<GameDisplay />
+</div>
+<div key="b">
 <GameDisplay />
 </div>
 <div key="e">
@@ -64,12 +66,9 @@ margin={[10 ,10 ]}
 <div key="j">
 <GameDisplay />
 </div>
-<div key="k">
-<GameDisplay />
-</div>
 
 </ResponsiveGridLayout>
 );
 };
 
-export default MyFirstGrid;
+export default Grid;
