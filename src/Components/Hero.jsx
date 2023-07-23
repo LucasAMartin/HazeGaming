@@ -34,9 +34,9 @@ const Hero = () => {
       </ScrollReveal.div>
 
       <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
-        <ScrollReveal.div animation="slide-in-right" className="z-[5]">
+        <div animation="slide-in-right" className="z-[5]">
         <img src={witcher} alt="billing" className="w-[100%] h-[100%] relative z-[5] max-h-[640px] max-w-[640px]" />
-        </ScrollReveal.div>
+        </div>
         {/* gradient start */}
         <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
         <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />

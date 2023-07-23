@@ -10,6 +10,8 @@ import Testimonials from "./Testimonials";
 import Hero from "./Hero";
 import Sidebar from "./Sidebar";
 import GameDisplay from "./GameDisplay";
+import HazeNavbar from "./HazeNavbar";
+
 
 
 
@@ -26,4 +28,5 @@ export {
   Hero,
   Sidebar,
   GameDisplay,
+  HazeNavbar,
 };

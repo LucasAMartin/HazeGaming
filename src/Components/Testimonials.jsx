@@ -10,8 +10,8 @@ const Testimonials = () => (
   >
     <div className="absolute z-[0] w-[60%] h-[60%] -right-[50%] rounded-full purple__gradient bottom-40" />
 
-    <div className="w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1]">
-      <h2 className={styles.heading2}>
+    <div className="w-full flex items-center justify-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1]">
+      <h2 className={`${styles.heading2} `}>
         What People are <br className="sm:block hidden" /> saying about us
       </h2>
       <div className="w-full md:mt-0 mt-6">
@@ -22,7 +22,7 @@ const Testimonials = () => (
       </div>
     </div>
 
-    <div className="flex flex-wrap sm:justify-start justify-center w-full feedback-container relative z-[1]">
+    <div className="flex flex-wrap justify-between w-full feedback-container relative z-[1]">
       {feedback.map((card, index) => (
         <ScrollReveal.div key={card.id} delay={index * 0.4}>
           <FeedbackCard {...card} />

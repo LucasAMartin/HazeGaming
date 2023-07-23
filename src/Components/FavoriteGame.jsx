@@ -5,13 +5,7 @@ import styles, { layout } from "../style";
 const FavoriteGame = () => (
   <section id="product" className={layout.sectionReverse}>
     <div className={layout.sectionImgReverse}>
-      <ScrollReveal.div className="z-[5]" animation="slide-in-left">
-      <img
-        src={ui}
-        alt="ui"
-        className="w-[100%] relative z-[5]"
-      />
-      </ScrollReveal.div>
+      <img src={ui} alt="ui" className="w-[100%] relative z-[5]" />
 
       {/* gradient start */}
       <div className="absolute z-[3] -left-1/2 top-0 w-[50%] h-[50%] rounded-full white__gradient" />
@@ -24,11 +18,17 @@ const FavoriteGame = () => (
         Find your next favorite <br className="sm:block hidden" /> game in just
         a few clicks.
       </ScrollReveal.h2>
-      <ScrollReveal.p delay={.4} className={`${styles.paragraph} max-w-[470px] mt-5`}>
+      <ScrollReveal.p
+        delay={0.4}
+        className={`${styles.paragraph} max-w-[470px] mt-5`}
+      >
         Browse our extensive catalog of games and discover new titles to add to
         your collection. With Haze, it's easy to find the perfect game for you.
       </ScrollReveal.p>
-      <ScrollReveal.div delay={.8} className="flex flex-row flex-wrap sm:mt-10 mt-6">
+      <ScrollReveal.div
+        delay={0.8}
+        className="flex flex-row flex-wrap sm:mt-10 mt-6"
+      >
         <img
           src={apple}
           alt="google_play"
