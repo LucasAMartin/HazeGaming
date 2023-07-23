@@ -18,10 +18,10 @@ const Grid = () => {
     { i: "d", x: 4, y: 2, w: 4, h: 2 },
     { i: "e", x: 8, y: 2, w: 4, h: 2 },
     { i: "f", x: 12, y: 2, w: 4, h: 2 },
-    { i: "g", x: 2, y: 4, w: 2, h: 1 },
-    { i: "h", x: 4, y: 4, w: 2, h: 1 },
-    { i: "i", x: 6, y: 4, w: 2, h: 1 },
-    { i: "j", x: 8, y: 4, w: 2, h: 1 }
+    { i: "g", x: 0, y: 4, w: 2, h: 1 },
+    { i: "h", x: 2, y: 4, w: 2, h: 1 },
+    { i: "i", x: 4, y: 4, w: 2, h: 1 },
+    { i: "j", x: 6, y: 4, w: 2, h: 1 }
   ];
   
   
@@ -35,6 +35,7 @@ cols={{ lg :16 }}
 rowHeight={160}
 margin={[10 ,10 ]}
 isBounded={true}
+compactType={null}
 >
 <div key="a">
 <GameDisplay />

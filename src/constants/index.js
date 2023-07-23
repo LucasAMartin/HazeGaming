@@ -33,16 +33,28 @@ export const sidebarLinks = [
     title: "Categories",
   },
   {
-    id: "new",
+    id: "newIcon",
     title: "New",
   },
   {
-    id: "points",
+    id: "cart",
     title: "Points Shop",
   },
   {
     id: "lab",
     title: "Lab",
+  },
+];
+
+export const navIcons = [
+  {
+    id: "bag",
+  },
+  {
+    id: "heart",
+  },
+  {
+    id: "search",
   },
 ];
 

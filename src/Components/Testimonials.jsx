@@ -1,6 +1,7 @@
 import { feedback } from "../constants";
 import styles from "../style";
 import FeedbackCard from "./FeedbackCard";
+import { ScrollReveal } from "reveal-on-scroll-react";
 
 const Testimonials = () => (
   <section
@@ -22,8 +23,10 @@ const Testimonials = () => (
     </div>
 
     <div className="flex flex-wrap sm:justify-start justify-center w-full feedback-container relative z-[1]">
-      {feedback.map((card) => (
-        <FeedbackCard key={card.id} {...card} />
+      {feedback.map((card, index) => (
+        <ScrollReveal.div key={card.id} delay={index * 0.4}>
+          <FeedbackCard {...card} />
+        </ScrollReveal.div>
       ))}
     </div>
   </section>

@@ -1,28 +1,29 @@
-import { useState } from "react";
-import { close, logo, menu } from "../assets";
-import { navLinks } from "../constants";
-import { useNavigate } from 'react-router-dom';
+import { bag, heart, search } from "../assets";
+import { navIcons } from "../constants";
 
+const icons = {
+    bag,
+    heart,
+    search
+  };
 
 const Navbar = () => {
-  const [active, setActive] = useState("Home");
-  const [toggle, setToggle] = useState(false);
-  const navigate = useNavigate();
-
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
-      <img src={logo} alt="haze" className="w-[128px] cursor-pointer" onClick={() => navigate('/')}/>
+      <img
+        src={logo}
+        alt="haze"
+        className="w-[128px] cursor-pointer"
+        onClick={() => navigate("/")}
+      />
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`font-poppins font-normal cursor-pointer text-[16px] ${
-              active === nav.title ? "text-white" : "text-dimWhite"
-            } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
-            onClick={() => setActive(nav.title)}
+            className="font-poppins font-normal cursor-pointer text-[16px]"
           >
-            <a href={`#${nav.id}`}>{nav.title}</a>
+            <img src={icons[nav.id]} className="w-6 h-6 mr-2" />
           </li>
         ))}
       </ul>

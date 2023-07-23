@@ -28,7 +28,15 @@ import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
 import tombRaider from "./tombRaider.png";
-
+import settings from "./settings.svg";
+import categories from "./categories.svg";
+import newIcon from "./new.svg";
+import cart from "./cart.svg";
+import news from "./news.svg"; 
+import lab from "./lab.svg";
+import heart from "./heart.svg";
+import bag from "./bag.svg"; 
+import search from "./search.svg";
 
 export {
   airbnb,
@@ -61,4 +69,15 @@ export {
   purpleBubble,
   fog,
   tombRaider,
+  settings,
+  categories, 
+  newIcon, 
+  cart, 
+  news, 
+  lab,
+  heart,
+  bag,
+  search,
 };
+
+

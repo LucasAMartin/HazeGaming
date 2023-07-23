@@ -1,16 +1,37 @@
 import React, { useState } from "react";
-import { home, arrowUp, purpleBubble } from "../assets";
+import { home, categories,newIcon, cart, news, lab, arrowUp, purpleBubble, people01, settings, bag, search, heart } from "../assets";
 import { sidebarLinks } from "../constants";
 
 const HelpButton = () => (
-  <li style={{ backgroundImage: `url(${purpleBubble})` }} className="p-10 bg-cover rounded-lg text-white text-center mt-16 flex flex-col justify-between">
-    <div className="flex justify-end">
+  <li
+    style={{ backgroundImage: `url(${purpleBubble})` }}
+    className="relative p-16 pt-24 w-32 bg-cover text-white flex flex-col justify-between rounded-3xl font-medium cursor-pointer"
+  >
+    <div className="absolute top-0 right-0 p-2">
       <img src={arrowUp} className="w-8" />
     </div>
-    <div className="m-2 flex justify-start">
-      Do you need help?
-    </div>
+    <div className="absolute bottom-0 left-0 p-4 text-[14px]">Do you need help?</div>
   </li>
+);
+
+const icons = {
+  home,
+  categories,
+  newIcon,
+  cart,
+  news,
+  lab,
+};
+
+
+const Profile = () => (
+  <div className="flex justify-between items-center mt-12 cursor-pointer">
+    <div className="flex items-center gap-4">
+      <img className="w-[32px] h-[32px] rounded-full" src={people01} />
+      <span> Julia </span>
+    </div>
+    <img src={settings} className="w-[24px] h-[24px]"/>
+  </div>
 );
 
 
@@ -18,8 +39,8 @@ const Sidebar = () => {
   const [active, setActive] = useState("Home");
 
   return (
-    <nav className="flex flex-col p-6 items-left gap-8 h-screen w-60 bg-primary">
-      <ul className="list-none justify-center items-center flex-col text-white text-[20px] font-poppins">
+    <nav className="flex flex-col p-6 items-left gap-8 h-screen w-40 bg-primary">
+      <ul className="list-none justify-center items-center flex-col text-white text-[12px] font-poppins">
         {sidebarLinks.map((nav) => (
           <li
             key={nav.id}
@@ -28,14 +49,15 @@ const Sidebar = () => {
             }`}
             onClick={() => setActive(nav.title)}
           >
-            <div className="flex">
-              <img src={home} className="w-6 h-6 mr-2" />
+            <div className="flex items-center">
+            <img src={icons[nav.id]} className="w-6 h-6 mr-2" />
               <a href={`#${nav.id}`}>{nav.title}</a>
             </div>
           </li>
         ))}
-        <li>
+        <li className="fixed bottom-6">
           <HelpButton />
+          <Profile />
         </li>
       </ul>
     </nav>

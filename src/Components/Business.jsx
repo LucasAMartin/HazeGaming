@@ -1,6 +1,7 @@
 import { features } from "../constants";
 import styles, { layout } from "../style";
 import Button from "./Button";
+import { ScrollReveal } from "reveal-on-scroll-react";
 
 const FeatureCard = ({ icon, title, content, index }) => (
   <div
@@ -26,24 +27,25 @@ const FeatureCard = ({ icon, title, content, index }) => (
 
 const Business = () => (
   <section id="features" className={layout.section}>
-    <div className={layout.sectionInfo}>
-      <h2 className={styles.heading2}>
-        You play the games, <br className="sm:block hidden" /> we’ll handle the
-        rest.
-      </h2>
-      <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        With Haze, you can focus on what really matters: gaming. Our platform
-        makes it easy to find, purchase, and manage your games.
-      </p>
+      <ScrollReveal.div animation="slide-in-bottom" className={layout.sectionInfo}>
+        <h2 className={styles.heading2}>
+          You play the games, <br className="sm:block hidden" /> we’ll handle
+          the rest.
+        </h2>
+        <ScrollReveal.div delay={0.6}>
+          <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+            With Haze, you can focus on what really matters: gaming. Our
+            platform makes it easy to find, purchase, and manage your games.
+          </p>
+        <Button styles={`mt-10`} />
+        </ScrollReveal.div>
+      </ScrollReveal.div>
 
-      <Button styles={`mt-10`} />
-    </div>
-
-    <div className={`${layout.sectionImg} flex-col`}>
+    <ScrollReveal.div className={`${layout.sectionImg} flex-col`}>
       {features.map((feature, index) => (
-        <FeatureCard key={feature.id} {...feature} index={index}/>
+        <FeatureCard key={feature.id} {...feature} index={index} />
       ))}
-    </div>
+    </ScrollReveal.div>
   </section>
 );
 
