@@ -41,6 +41,10 @@ export const sidebarLinks = [
     title: "Points Shop",
   },
   {
+    id: "news",
+    title: "News",
+  },
+  {
     id: "lab",
     title: "Lab",
   },

@@ -2,12 +2,18 @@ import React from "react";
 import { Responsive, WidthProvider } from "react-grid-layout";
 import "react-grid-layout/css/styles.css";
 import "react-resizable/css/styles.css";
+import { witcherBanner } from "../assets";
+import LargeTile from "./LargeTile";
 
 const ResponsiveGridLayout = WidthProvider(Responsive);
 
-const GameDisplay = () => (
-  <div className="bg-gray-400 rounded-lg w-full h-full" />
-);
+const generateDivs = (layout) => {
+  return layout.map((item) => (
+    <div key={item.i}>
+      <LargeTile />
+    </div>
+  ));
+};
 
 const Grid = () => {
   const layout = [
@@ -43,91 +49,13 @@ const Grid = () => {
     <ResponsiveGridLayout
       className="layout"
       layouts={{ lg: layout}}
-      breakpoints={{ lg: 1200}}
+      breakpoints={{ lg: 900}}
       cols={{ lg: 16}}
       rowHeight={160}
-      margin={[10, 10]}
       isDraggable={false}
       isBounded={true}
     >
-      <div key="a">
-        <GameDisplay />
-      </div>
-      <div key="b">
-        <GameDisplay />
-      </div>
-      <div key="c">
-        <GameDisplay />
-      </div>
-      <div key="d">
-        <GameDisplay />
-      </div>
-      <div key="e">
-        <GameDisplay />
-      </div>
-      <div key="f">
-        <GameDisplay />
-      </div>
-      <div key="g">
-        <GameDisplay />
-      </div>
-      <div key="h">
-        <GameDisplay />
-      </div>
-      <div key="i">
-        <GameDisplay />
-      </div>
-      <div key="j">
-        <GameDisplay />
-      </div>
-      <div key="k">
-        <GameDisplay />
-      </div>
-      <div key="l">
-        <GameDisplay />
-      </div>
-      <div key="m">
-        <GameDisplay />
-      </div>
-      <div key="n">
-        <GameDisplay />
-      </div>
-      <div key="o">
-        <GameDisplay />
-      </div>
-      <div key="p">
-        <GameDisplay />
-      </div>
-      <div key="q">
-        <GameDisplay />
-      </div>
-      <div key="r">
-        <GameDisplay />
-      </div>
-      <div key="s">
-        <GameDisplay />
-      </div>
-      <div key="t">
-        <GameDisplay />
-      </div>
-      <div key="u">
-        <GameDisplay />
-      </div>
-      <div key="v">
-        <GameDisplay />
-      </div>
-      <div key="w">
-        <GameDisplay />
-      </div>
-      <div key="x">
-        <GameDisplay />
-      </div>
-      <div key="y">
-        <GameDisplay />
-      </div>
-      <div key="z">
-        <GameDisplay />
-      </div>
+      {generateDivs(layout)}
     </ResponsiveGridLayout>
   );
 };

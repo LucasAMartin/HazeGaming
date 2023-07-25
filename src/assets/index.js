@@ -37,6 +37,8 @@ import lab from "./lab.svg";
 import heart from "./heart.svg";
 import bag from "./bag.svg"; 
 import search from "./search.svg";
+import witcherBanner from "./witcherBanner.jpg";
+import trending from "./trending.svg"
 
 export {
   airbnb,
@@ -78,6 +80,8 @@ export {
   heart,
   bag,
   search,
+  witcherBanner,
+  trending,
 };
 
 

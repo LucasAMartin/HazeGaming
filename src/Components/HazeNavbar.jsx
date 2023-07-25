@@ -12,11 +12,11 @@ const HazeNavbar = () => {
   const navigate = useNavigate();
 
   return (
-    <nav className="w-full flex  py-6 justify-between items-center">
+    <nav className="w-full flex  py-6 justify-between items-center sm:ml-[-40px] pl-12 z-10">
       <img
         src={logo}
         alt="haze"
-        className="w-[128px] cursor-pointer"
+        className="sm:w-[128px] w-[64px] cursor-pointer"
         onClick={() => navigate("/")}
       />
 

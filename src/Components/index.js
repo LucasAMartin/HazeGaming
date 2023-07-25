@@ -11,6 +11,10 @@ import Hero from "./Hero";
 import Sidebar from "./Sidebar";
 import GameDisplay from "./GameDisplay";
 import HazeNavbar from "./HazeNavbar";
+import LargeTile from "./LargeTile";
+import MediumTile from "./MediumTile";
+import SmallTile from "./SmallTile";
+
 
 
 
@@ -29,4 +33,7 @@ export {
   Sidebar,
   GameDisplay,
   HazeNavbar,
+  LargeTile,
+  MediumTile,
+  SmallTile
 };

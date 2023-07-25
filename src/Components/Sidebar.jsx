@@ -18,7 +18,7 @@ import { sidebarLinks } from "../constants";
 const HelpButton = () => (
   <li
     style={{ backgroundImage: `url(${purpleBubble})` }}
-    className="relative p-16 pt-24 w-32 bg-cover text-white flex flex-col justify-between rounded-3xl font-medium cursor-pointer"
+    className="relative p-16 pt-20 bg-cover text-white flex flex-col justify-between rounded-3xl font-medium cursor-pointer"
   >
     <div className="absolute top-0 right-0 p-2">
       <img src={arrowUp} className="w-8" />
@@ -39,7 +39,7 @@ const icons = {
 };
 
 const Profile = () => (
-  <div className="flex justify-between items-center mt-12 cursor-pointer">
+  <div className="flex justify-between items-center mt-8 cursor-pointer">
     <div className="flex items-center gap-4">
       <img className="w-[32px] h-[32px] rounded-full" src={people01} />
       <span> Julia </span>
@@ -57,13 +57,13 @@ const Sidebar = () => {
       <img
         src={isOpen ? close : menu}
         alt="menu"
-        className="sm:hidden w-[28px] h-[28px] object-contain ml-6"
+        className="sm:hidden w-[28px] h-[28px] object-contain ml-6 mt-[-50px] mb-[30px]"
         onClick={() => setIsOpen((prevState) => !prevState)}
       />
       <nav
         className={`${
-          isOpen ? "block" : "hidden"
-        } sm:block flex flex-col p-6 items-left gap-8 h-screen w-40 bg-primary`}
+          isOpen ? "translate-x-0" : "-translate-x-full"
+        } transform transition duration-300 ease-in-out sm:translate-x-0 flex flex-col p-6 items-left gap-8 h-screen w-40 bg-primary`}
       >
         <ul className="list-none justify-center items-center flex-col text-white text-[12px] font-poppins">
           {sidebarLinks.map((nav) => (
@@ -80,7 +80,7 @@ const Sidebar = () => {
               </div>
             </li>
           ))}
-          <li className="fixed bottom-6">
+          <li className="fixed sm:bottom-[130px] bottom-[110px]">
             <HelpButton />
             <Profile />
           </li>
