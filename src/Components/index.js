@@ -14,6 +14,7 @@ import HazeNavbar from "./HazeNavbar";
 import LargeTile from "./LargeTile";
 import MediumTile from "./MediumTile";
 import SmallTile from "./SmallTile";
+import TileIcons from "./TileIcons";
 
 
 
@@ -35,5 +36,6 @@ export {
   HazeNavbar,
   LargeTile,
   MediumTile,
-  SmallTile
+  SmallTile,
+  TileIcons
 };

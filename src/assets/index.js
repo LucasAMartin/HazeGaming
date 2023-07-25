@@ -39,6 +39,9 @@ import bag from "./bag.svg";
 import search from "./search.svg";
 import witcherBanner from "./witcherBanner.jpg";
 import trending from "./trending.svg"
+import windows from "./windows.svg"
+import ios from "./ios.svg"
+import steam from "./steam.png"
 
 export {
   airbnb,
@@ -82,6 +85,9 @@ export {
   search,
   witcherBanner,
   trending,
+  windows,
+  ios,
+  steam
 };
 
 

@@ -63,9 +63,9 @@ const Sidebar = () => {
       <nav
         className={`${
           isOpen ? "translate-x-0" : "-translate-x-full"
-        } transform transition duration-300 ease-in-out sm:translate-x-0 flex flex-col p-6 items-left gap-8 h-screen w-40 bg-primary`}
+        } transform transition duration-300 ease-in-out sm:translate-x-0 flex flex-col p-6 items-left gap-8 h-screen w-[11rem] bg-primary`}
       >
-        <ul className="list-none justify-center items-center flex-col text-white text-[12px] font-poppins">
+        <ul className="list-none justify-center items-center flex-col text-white text-[14px] font-poppins">
           {sidebarLinks.map((nav) => (
             <li
               key={nav.id}
