@@ -37,11 +37,19 @@ import lab from "./lab.svg";
 import heart from "./heart.svg";
 import bag from "./bag.svg"; 
 import search from "./search.svg";
-import witcherBanner from "./witcherBanner.jpg";
+import witcherBanner from "./witcherBanner.png";
 import trending from "./trending.svg"
 import windows from "./windows.svg"
 import ios from "./ios.svg"
 import steam from "./steam.png"
+import smile from "./smile.svg"
+import play from "./play.svg"
+import tombRaiderGameplay from "./tombRaiderGameplay.jpg";
+import tombRaiderBanner from "./tombRaiderBanner.jpg";
+import redDead from "./redDead.png";
+import skyrim from "./skyrim.png"
+import massEffect from "./massEffect.jpg";
+import gta from "./gta.jpg";
 
 export {
   airbnb,
@@ -87,7 +95,15 @@ export {
   trending,
   windows,
   ios,
-  steam
+  steam,
+  smile,
+  play,
+  tombRaiderGameplay,
+  tombRaiderBanner,
+  redDead,
+  skyrim,
+  massEffect,
+  gta,
 };
 
 

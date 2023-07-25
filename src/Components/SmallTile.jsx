@@ -1,9 +1,14 @@
-import React from 'react'
-import { witcherBanner } from '../assets';
+import React from "react";
+import { tombRaiderGameplay } from "../assets";
 
-const LargeTile = () => (
-    <div className="bg-gray-400 rounded-lg w-full h-full" />
-    );
+const SmallTile = () => (
+  <div className={` w-full h-full`}>
+    <img
+      src={tombRaiderGameplay}
+      alt="img"
+      className="w-full h-full object-cover rounded-lg"
+    />
+  </div>
+);
 
-
-export default LargeTile
+export default SmallTile;

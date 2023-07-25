@@ -1,17 +1,30 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import TileIcons from "./TileIcons";
-import { witcherBanner } from "../assets";
+import { witcherBanner, tombRaiderBanner, redDead, skyrim, massEffect, gta } from "../assets";
+import Rating from "./Rating";
+import PlayButton from "./PlayButton";
 
+const LargeTile = () => {
+  const [imageSrc, setImageSrc] = useState(gta);
 
-const LargeTile = () => (
-  <div className={`bg-url(${witcherBanner}) w-full h-full`}>
-    <img
-      src={witcherBanner}
-      alt="img"
-      className="w-full h-full object-cover rounded-lg"
-    />
-    <TileIcons/>
-  </div>
-);
+  useEffect(() => {
+    const images = [witcherBanner, tombRaiderBanner, redDead, skyrim, massEffect, gta];
+    const randomImage = images[Math.floor(Math.random() * images.length)];
+    setImageSrc(randomImage);
+  }, []);
+
+  return (
+    <div className={` w-full h-full`}>
+      <img
+        src={imageSrc}
+        alt="img"
+        className="w-full h-full object-cover rounded-lg"
+      />
+      <TileIcons/>
+      <Rating/>
+      <PlayButton/>
+    </div>
+  );
+};
 
 export default LargeTile;

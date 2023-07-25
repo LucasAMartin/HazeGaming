@@ -2,18 +2,21 @@ import React from "react";
 import { Responsive, WidthProvider } from "react-grid-layout";
 import "react-grid-layout/css/styles.css";
 import "react-resizable/css/styles.css";
-import { witcherBanner } from "../assets";
 import LargeTile from "./LargeTile";
+import MediumTile from "./MediumTile";
+import SmallTile from "./SmallTile";
 
 const ResponsiveGridLayout = WidthProvider(Responsive);
 
 const generateDivs = (layout) => {
   return layout.map((item) => (
     <div key={item.i}>
-      <LargeTile />
+      {item.w === 6 ? <MediumTile /> : item.w !== 8 ? <SmallTile /> : <LargeTile />}
     </div>
   ));
 };
+
+
 
 const Grid = () => {
   const layout = [
