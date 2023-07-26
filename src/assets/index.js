@@ -61,6 +61,11 @@ import witcherGameplay from "./witcherGameplay.webp"
 import redDeadGameplay from "./redDeadGameplay.jpg"
 import massEffectGameplay from "./massEffectGameplay.jpg"
 import gtaGameplay from "./gtaGameplay.jpg"
+import corsair from "./corsair.png"
+import razer from "./razer.png"
+import mojang from "./mojang.png"
+import konami from "./konami.png"
+
 
 export {
   airbnb,
@@ -125,7 +130,11 @@ export {
   witcherGameplay,
   redDeadGameplay,
   massEffectGameplay,
-  gtaGameplay
+  gtaGameplay,
+  corsair,
+  razer,
+  mojang,
+  konami,
 };
 
 
