@@ -81,6 +81,10 @@ const Grid = () => {
       margin={[10, 10]}
       rowHeight={160}
       isBounded={true}
+      isResizable={false}
+      useCSSTransforms={true}
+      allowOverlap={false}
+      resizeHandle={false}
     >
       {generateDivs(layout)}
     </ResponsiveGridLayout>
