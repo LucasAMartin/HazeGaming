@@ -1,17 +1,24 @@
 import React, { useState, useEffect } from "react";
 import TileIcons from "./TileIcons";
-import { witcherBanner, tombRaiderBanner, redDead, skyrim, massEffect, gta } from "../assets";
+import {
+  witcherBanner,
+  tombRaiderBanner,
+  redDead,
+  skyrim,
+  massEffect,
+  gta,
+} from "../assets";
 import Rating from "./Rating";
 import PlayButton from "./PlayButton";
 
-const LargeTile = () => {
+const LargeTile = ({ gameTitle }) => {
   const [imageSrc, setImageSrc] = useState(gta);
-
   useEffect(() => {
-    const images = [witcherBanner, tombRaiderBanner, redDead, skyrim, massEffect, gta];
-    const randomImage = images[Math.floor(Math.random() * images.length)];
-    setImageSrc(randomImage);
-  }, []);
+    const selectedAsset = assetLinks.find((asset) => asset.title === gameTitle);
+    if (selectedAsset) {
+      setImageSrc(selectedAsset.src);
+    }
+  }, [gameTitle]);
 
   return (
     <div className={` w-full h-full cursor-pointer`}>
@@ -20,11 +27,38 @@ const LargeTile = () => {
         alt="img"
         className="w-full h-full object-cover rounded-lg"
       />
-      <TileIcons/>
-      <Rating className="absolute bottom-2 left-2"/>
-      <PlayButton/>
+      <TileIcons />
+      <Rating className="absolute bottom-2 left-2" />
+      <PlayButton />
     </div>
   );
 };
+
+const assetLinks = [
+  {
+    src: witcherBanner,
+    title: "The Witcher 3",
+  },
+  {
+    src: tombRaiderBanner,
+    title: "Tomb Raider",
+  },
+  {
+    src: redDead,
+    title: "Red Dead Redemption",
+  },
+  {
+    src: skyrim,
+    title: "Skyrim",
+  },
+  {
+    src: massEffect,
+    title: "Mass Effect",
+  },
+  {
+    src: gta,
+    title: "Grand Theft Auto",
+  },
+];
 
 export default LargeTile;

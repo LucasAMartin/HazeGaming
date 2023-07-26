@@ -16,7 +16,7 @@ import {
 import { sidebarLinks } from "../constants";
 
 const HelpButton = () => (
-  <li
+  <div
     style={{ backgroundImage: `url(${purpleBubble})` }}
     className="relative p-16 pt-20 bg-cover text-white flex flex-col justify-between rounded-3xl font-medium cursor-pointer"
   >
@@ -26,7 +26,7 @@ const HelpButton = () => (
     <div className="absolute bottom-0 left-0 p-4 text-[14px]">
       Do you need help?
     </div>
-  </li>
+  </div>
 );
 
 const icons = {

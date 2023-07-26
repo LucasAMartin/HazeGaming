@@ -3,15 +3,17 @@ import { witcherCover, tombRaiderCover, redDeadCover, skyrimCover, massEffectCov
 import Rating from "./Rating";
 import PlayButton from "./PlayButton";
 
-const MediumTile = () => {
+const MediumTile = ({ gameTitle }) => {
   const [imageSrc, setImageSrc] = useState("");
   const [imageTitle, setImageTitle] = useState("");
 
   useEffect(() => {
-    const randomAsset = assetLinks[Math.floor(Math.random() * assetLinks.length)];
-    setImageSrc(randomAsset.src);
-    setImageTitle(randomAsset.title);
-  }, []);
+    const selectedAsset = assetLinks.find((asset) => asset.title === gameTitle);
+    if (selectedAsset) {
+      setImageSrc(selectedAsset.src);
+      setImageTitle(selectedAsset.title);
+    }
+  }, [gameTitle]);
 
   return (
     <div className={`bg-darkPurple w-full h-full rounded-lg flex items-center cursor-pointer`}>
@@ -27,7 +29,7 @@ const MediumTile = () => {
   );
 };
 
-export const assetLinks = [
+const assetLinks = [
   {
     src: witcherCover,
     title: "The Witcher 3",
@@ -53,5 +55,6 @@ export const assetLinks = [
     title: "Grand Theft Auto",
   },
 ];
+
 
 export default MediumTile;
