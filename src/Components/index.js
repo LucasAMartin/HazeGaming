@@ -16,6 +16,7 @@ import MediumTile from "./MediumTile";
 import SmallTile from "./SmallTile";
 import TileIcons from "./TileIcons";
 import PlayButton from "./Button";
+import LibraryDisplay from "./LibraryDisplay";
 
 
 
@@ -38,5 +39,6 @@ export {
   MediumTile,
   SmallTile,
   TileIcons,
-  PlayButton
+  PlayButton,
+  LibraryDisplay
 };

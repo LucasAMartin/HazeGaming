@@ -8,7 +8,7 @@ import {
   lab,
   arrowUp,
   purpleBubble,
-  people01,
+  people02,
   settings,
   menu,
   close,
@@ -41,8 +41,8 @@ const icons = {
 const Profile = () => (
   <div className="flex justify-between items-center mt-8 cursor-pointer">
     <div className="flex items-center gap-4">
-      <img className="w-[32px] h-[32px] rounded-full" src={people01} />
-      <span> Julia </span>
+      <img className="w-[32px] h-[32px] rounded-full" src={people02} />
+      <span> Lucas </span>
     </div>
     <img src={settings} className="w-[24px] h-[24px]" />
   </div>
@@ -63,7 +63,7 @@ const Sidebar = () => {
       <nav
         className={`${
           isOpen ? "translate-x-0" : "-translate-x-full"
-        } transform transition duration-300 ease-in-out sm:translate-x-0 flex flex-col p-6 items-left gap-8 h-screen w-[11rem] bg-darkPurple`}
+        } transform transition duration-300 ease-in-out sm:translate-x-0 flex flex-col p-6 items-left gap-8 h-screen w-[11rem]`}
       >
         <ul className="list-none justify-center items-center flex-col text-white text-[14px] font-poppins">
           {sidebarLinks.map((nav) => (
@@ -76,7 +76,7 @@ const Sidebar = () => {
             >
               <div className="flex items-center">
                 <img src={icons[nav.id]} className="w-6 h-6 mr-2" />
-                <a href={`#${nav.id}`}>{nav.title}</a>
+                <a href={`/${nav.link}`}>{nav.title}</a>
               </div>
             </li>
           ))}

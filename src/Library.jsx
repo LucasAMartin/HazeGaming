@@ -1,12 +1,12 @@
 import styles from "./style";
-import { Sidebar, HazeNavbar, GameDisplay } from "./components";
+import { Sidebar, HazeNavbar, LibraryDisplay } from "./components";
 
 const Haze = () => (
     <div className=" bg-darkPurple overflow-hidden">
       <div className="flex flex-col h-screen overflow-hidden">
-        <div className={`sm:pr-16 pr-6 pl-4 ${styles.flexCenter}`}>
+      <div className={`sm:pr-16 pr-6 pl-4 ${styles.flexCenter}`}>
           <div className="w-full overflow-x-hidden">
-            <HazeNavbar message="Good afternoon, Lucas!"/>
+            <HazeNavbar message="Lucas's Library"/>
           </div>
         </div>
         <div className="flex flex-1 overflow-y-scroll">
@@ -17,8 +17,7 @@ const Haze = () => (
             className={`${styles.paddingX} ${styles.flexStart} flex-1 flex justify-center`}
           >
             <div className={`w-[90%] sm:ml-[12%] h-full`}>
-            <div className="absolute z-[0] w-[80%] h-[90%] rounded-full purple__gradient top-0" />
-              <GameDisplay/>
+              <LibraryDisplay/>
             </div>
           </div>
         </div>

@@ -21,11 +21,11 @@ const LargeTile = ({ gameTitle }) => {
   }, [gameTitle]);
 
   return (
-    <div className={` w-full h-full cursor-pointer`}>
+    <div className={` w-full h-full cursor-pointer rounded-xl`}>
       <img
         src={imageSrc}
         alt="img"
-        className="w-full h-full object-cover rounded-2xl"
+        className="w-full border-2 border-darkPurple h-full object-cover rounded-xl"
       />
       <TileIcons />
       <Rating className="absolute bottom-2 left-2" />

@@ -22,7 +22,7 @@ const SmallTile = ({ gameTitle }) => {
       <img
         src={imageSrc}
         alt="img"
-        className="w-full h-full object-cover rounded-lg "
+        className="border-2 border-darkPurple w-full h-full object-cover rounded-lg "
       />
     </div>
   );

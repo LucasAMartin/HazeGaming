@@ -16,7 +16,7 @@ const MediumTile = ({ gameTitle }) => {
   }, [gameTitle]);
 
   return (
-    <div className={`bg-purple w-full h-full rounded-xl flex items-center cursor-pointer`}>
+    <div className={` bg-darkPurple w-full h-full rounded-xl flex items-center cursor-pointer`}>
       <img
         src={imageSrc}
         alt="img"

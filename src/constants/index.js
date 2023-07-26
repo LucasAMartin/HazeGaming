@@ -25,26 +25,32 @@ export const navLinks = [
 
 export const sidebarLinks = [
   {
+    link: "haze",
     id: "home",
     title: "Home",
   },
   {
+    link: "library",
     id: "categories",
     title: "Categories",
   },
   {
+    link: "library",
     id: "newIcon",
     title: "New",
   },
   {
+    link: "library",
     id: "cart",
     title: "Points Shop",
   },
   {
+    link: "library",
     id: "news",
     title: "News",
   },
   {
+    link: "library",
     id: "lab",
     title: "Lab",
   },
@@ -53,13 +59,13 @@ export const sidebarLinks = [
 
 export const navIcons = [
   {
-    id: "bag",
+    id: "search",
   },
   {
     id: "heart",
   },
   {
-    id: "search",
+    id: "bag",
   },
 ];
 
