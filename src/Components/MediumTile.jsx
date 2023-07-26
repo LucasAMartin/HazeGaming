@@ -14,7 +14,7 @@ const MediumTile = () => {
   }, []);
 
   return (
-    <div className={`bg-darkPurple w-full h-full rounded-lg flex items-center`}>
+    <div className={`bg-darkPurple w-full h-full rounded-lg flex items-center cursor-pointer`}>
       <img
         src={imageSrc}
         alt="img"

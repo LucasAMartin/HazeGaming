@@ -14,7 +14,7 @@ const LargeTile = () => {
   }, []);
 
   return (
-    <div className={` w-full h-full`}>
+    <div className={` w-full h-full cursor-pointer`}>
       <img
         src={imageSrc}
         alt="img"

@@ -24,11 +24,11 @@ const SmallTile = () => {
     setImageSrc(randomImage);
   }, []);
   return (
-    <div className={` w-full h-full`}>
+    <div className={` w-full h-full cursor-pointer`}>
       <img
         src={imageSrc}
         alt="img"
-        className="w-full h-full object-cover rounded-lg"
+        className="w-full h-full object-cover rounded-lg "
       />
     </div>
   );
