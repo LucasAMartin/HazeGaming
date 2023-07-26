@@ -50,6 +50,7 @@ export const sidebarLinks = [
   },
 ];
 
+
 export const navIcons = [
   {
     id: "bag",

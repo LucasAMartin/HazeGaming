@@ -46,10 +46,16 @@ import smile from "./smile.svg"
 import play from "./play.svg"
 import tombRaiderGameplay from "./tombRaiderGameplay.jpg";
 import tombRaiderBanner from "./tombRaiderBanner.jpg";
+import tombRaiderCover from "./tombRaiderCover.jpg";
+import witcherCover from "./witcherCover.jpg";
 import redDead from "./redDead.png";
+import redDeadCover from "./redDeadCover.jpg";
+import massEffectCover from "./massEffectCover.png";
 import skyrim from "./skyrim.png"
 import massEffect from "./massEffect.jpg";
 import gta from "./gta.jpg";
+import gtaCover from "./gtaCover.jpg";
+import skyrimCover from "./skyrimCover.png"
 
 export {
   airbnb,
@@ -104,6 +110,12 @@ export {
   skyrim,
   massEffect,
   gta,
+  tombRaiderCover,
+  witcherCover,
+  redDeadCover,
+  massEffectCover,
+  gtaCover,
+  skyrimCover
 };
 
 

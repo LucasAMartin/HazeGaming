@@ -21,7 +21,7 @@ const LargeTile = () => {
         className="w-full h-full object-cover rounded-lg"
       />
       <TileIcons/>
-      <Rating/>
+      <Rating className="absolute bottom-2 left-2"/>
       <PlayButton/>
     </div>
   );
