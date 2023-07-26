@@ -3,7 +3,9 @@ import { discount, witcher } from "../assets";
 import GetStarted from "./GetStarted";
 import { ScrollReveal } from "reveal-on-scroll-react";
 
+
 const Hero = () => {
+
   return (
     <section id="home" className={`flex md:flex-row flex-col lg:py-2 py-8`}>
       <ScrollReveal.div animation="slide-in-left" className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
@@ -20,7 +22,7 @@ const Hero = () => {
             The Next <br className="sm:block hidden" />{" "}
             <span className="text-gradient">Generation</span>{" "}
           </h1>
-          <ScrollReveal.div delay={.6} className="ss:flex hidden md:mr-4 mr-0">
+          <ScrollReveal.div delay={.6}className="ss:flex hidden md:mr-4 mr-0 ">
             <GetStarted />
           </ScrollReveal.div>
         </div>
