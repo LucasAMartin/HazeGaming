@@ -1,5 +1,5 @@
 import styles from "./style";
-import { Sidebar, HazeNavbar, LibraryDisplay } from "./components";
+import { Sidebar, HazeNavbar, LibraryDisplay } from "./Components";
 
 const Haze = () => (
     <div className=" bg-darkPurple overflow-hidden">

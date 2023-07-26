@@ -1,6 +1,5 @@
 import styles from "./style";
-import { Link } from 'react-router-dom';
-import { FavoriteGame, Business, ManageLibrary, Clients, CTA, Footer, Navbar, Stats, Testimonials, Hero } from "./components";
+import { FavoriteGame, Business, ManageLibrary, Clients, CTA, Footer, Navbar, Stats, Testimonials, Hero } from "./Components";
 
 const App = () => (
   <div className="bg-primary w-full overflow-hidden">
