@@ -10,14 +10,15 @@ const Haze = () => (
           </div>
         </div>
         <div className="flex flex-1 overflow-y-scroll">
-          <div className="fixed z-40">
+          <div className="fixed">
             <Sidebar/>
           </div>
           <div
-            className={`${styles.paddingX} ${styles.flexStart} flex-1 flex justify-center`}
+            className={`${styles.paddingX} ${styles.flexStart} flex-1 flex justify-center z-40`}
           >
-            <div className={`w-[90%] sm:ml-[15%] h-full`}>
-              <GameDisplay />
+            <div className={`w-[90%] sm:ml-[12%] h-full z-30`}>
+            <div className="absolute z-[0] w-[60%] h-[90%] ml-[20%] rounded-full purple__gradient top-0" />
+              <GameDisplay className="z-40"/>
             </div>
           </div>
         </div>

@@ -56,6 +56,11 @@ import massEffect from "./massEffect.jpg";
 import gta from "./gta.jpg";
 import gtaCover from "./gtaCover.jpg";
 import skyrimCover from "./skyrimCover.png"
+import skyrimGameplay from "./skyrimGameplay.jpg"
+import witcherGameplay from "./witcherGameplay.webp"
+import redDeadGameplay from "./redDeadGameplay.jpg"
+import massEffectGameplay from "./massEffectGameplay.jpg"
+import gtaGameplay from "./gtaGameplay.jpg"
 
 export {
   airbnb,
@@ -115,7 +120,12 @@ export {
   redDeadCover,
   massEffectCover,
   gtaCover,
-  skyrimCover
+  skyrimCover,
+  skyrimGameplay,
+  witcherGameplay,
+  redDeadGameplay,
+  massEffectGameplay,
+  gtaGameplay
 };
 
 

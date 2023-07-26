@@ -46,7 +46,7 @@ const Grid = () => {
       layouts={{ lg: layout}}
       breakpoints={{ lg: 900}}
       cols={{ lg: 14}}
-      margin={[10,20]}
+      margin={[10,10]}
       rowHeight={160}
       isBounded={true}
     >
