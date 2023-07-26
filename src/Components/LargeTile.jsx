@@ -25,7 +25,7 @@ const LargeTile = ({ gameTitle }) => {
       <img
         src={imageSrc}
         alt="img"
-        className="w-full h-full object-cover rounded-lg"
+        className="w-full h-full object-cover rounded-2xl"
       />
       <TileIcons />
       <Rating className="absolute bottom-2 left-2" />

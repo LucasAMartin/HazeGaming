@@ -16,14 +16,14 @@ const MediumTile = ({ gameTitle }) => {
   }, [gameTitle]);
 
   return (
-    <div className={`bg-darkPurple w-full h-full rounded-lg flex items-center cursor-pointer`}>
+    <div className={`bg-purple w-full h-full rounded-xl flex items-center cursor-pointer`}>
       <img
         src={imageSrc}
         alt="img"
-        className="w-[25%] h-[150px] ml-6 object-cover rounded-lg "
+        className="w-[20%] h-[125px] ml-6 object-cover rounded-lg "
       />
-      <div className="text-white text-[20px] font-semibold absolute top-4 left-[35%]">{imageTitle}</div>
-      <Rating className="absolute bottom-2 left-[35%]" />
+      <div className="text-white text-[20px] font-semibold absolute top-4 left-[30%]">{imageTitle}</div>
+      <Rating className="absolute bottom-2 left-[30%]" />
       <PlayButton />
     </div>
   );
