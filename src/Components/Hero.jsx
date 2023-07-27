@@ -7,10 +7,10 @@ import { ScrollReveal } from "reveal-on-scroll-react";
 const Hero = () => {
 
   return (
-    <section id="home" className={`flex md:flex-row flex-col lg:py-2 py-8`}>
+    <section id="home" className={`flex md:flex-row flex-col lg:py-2 py-8 z-0`}>
       <ScrollReveal.div animation="slide-in-left" className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
         <ScrollReveal.div delay={.6} className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
-          <img src={discount} alt="discount" className="w-[32px] h-[32px]" />
+          <img src={discount} alt="discount" className="z-0 first-line:w-[32px] h-[32px]" />
           <p className={`${styles.paragraph} ml-2`}>
             <span>Make a</span> <span className="text-white">free account</span>
             <span> and Join</span> <span className="text-white">thousands of gamers</span>

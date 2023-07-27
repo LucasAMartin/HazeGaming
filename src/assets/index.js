@@ -46,10 +46,10 @@ import smile from "./smile.svg"
 import play from "./play.svg"
 import tombRaiderGameplay from "./tombRaiderGameplay.jpg";
 import tombRaiderBanner from "./tombRaiderBanner.jpg";
-import tombRaiderCover from "./tombRaiderCover.jpg";
+import tombRaiderCover from "./tombRaiderCover.png";
 import witcherCover from "./witcherCover.jpg";
 import redDead from "./redDead.png";
-import redDeadCover from "./redDeadCover.jpg";
+import redDeadCover from "./redDeadCover.png";
 import massEffectCover from "./massEffectCover.png";
 import skyrim from "./skyrim.png"
 import massEffect from "./massEffect.jpg";

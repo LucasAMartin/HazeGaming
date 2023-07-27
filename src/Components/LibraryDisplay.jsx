@@ -28,7 +28,7 @@ const LibraryDisplay = () => (
             key={title}
             src={asset.src}
             alt={title}
-            style={{ width: "200px", height: "250px" }}
+            style={{ width: "200px", height: "300px" }}
             className="hover:scale-110 duration-200 object-cover rounded-md"
           />
         );
@@ -40,7 +40,7 @@ const LibraryDisplay = () => (
             key={title}
             src={asset.src}
             alt={title}
-            style={{ width: "200px", height: "250px" }}
+            style={{ width: "200px", height: "300px" }}
             className="hover:scale-110 duration-200 object-cover rounded-md"
           />
         );
@@ -52,7 +52,7 @@ const LibraryDisplay = () => (
             key={title}
             src={asset.src}
             alt={title}
-            style={{ width: "200px", height: "250px" }}
+            style={{ width: "200px", height: "300px" }}
             className="hover:scale-110 duration-200 object-cover rounded-md"
           />
         );
@@ -64,7 +64,7 @@ const LibraryDisplay = () => (
             key={title}
             src={asset.src}
             alt={title}
-            style={{ width: "200px", height: "250px" }}
+            style={{ width: "200px", height: "300px" }}
             className="hover:scale-110 duration-200 object-cover rounded-md"
           />
         );

@@ -20,7 +20,7 @@ const MediumTile = ({ gameTitle }) => {
       <img
         src={imageSrc}
         alt="img"
-        className="w-[20%] h-[125px] ml-6 object-cover rounded-lg "
+        className="w-[80px] h-[120px] ml-6 object-cover rounded-lg "
       />
       <div className="text-white text-[20px] font-semibold absolute top-4 left-[30%]">{imageTitle}</div>
       <Rating className="absolute bottom-2 left-[30%]" />
