@@ -6,12 +6,11 @@ module.exports = {
     extend: {
       colors: {
         primary: "#00040f",
-        secondary: "#00f6ff",
+        secondary: "#230820",
         dimWhite: "rgba(255, 255, 255, 0.7)",
         dimBlue: "rgba(9, 151, 124, 0.1)",
         darkPurple: "#120323",
         darkBlue: "#050A30",
-        purple: "#230820",
         brightPurple: "#33bbcf",
       },
       fontFamily: {

@@ -1,16 +1,27 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { close, logo, menu } from "../assets";
 import { navLinks } from "../constants";
 import { useNavigate } from 'react-router-dom';
 
-
 const Navbar = () => {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const navigate = useNavigate();
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="w-full flex py-6 justify-between items-center navbar">
+    <nav className={`w-full flex py-6 justify-between items-center navbar ${scrolled ? "bg-fade" : ""}`}>
       <img src={logo} alt="haze" className="w-[128px] cursor-pointer" onClick={() => navigate('/')}/>
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
@@ -38,7 +49,7 @@ const Navbar = () => {
         <div
           className={`${
             !toggle ? "translate-x-[175px]" : "-translate-x-0"
-          } z-10 transform transition duration-300 ease-in-out sm:translate-x-0 p-6 bg-black-gradient absolute top-20 right-0 my-2 min-w-[140px] rounded-xl`}
+          } z-10 transform transition duration-300 ease-in-out sm:translate-x-0 p-6 bg-black-gradient absolute top-20 right-0 my-2 min-w-[140px] rounded-lg mt-20 `}
         >
           <ul className="list-none flex justify-end items-start flex-1 flex-col">
             {navLinks.map((nav, index) => (
