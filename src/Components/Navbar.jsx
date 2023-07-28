@@ -7,11 +7,11 @@ const Navbar = () => {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const navigate = useNavigate();
+  const navigate = useNavigate(); 
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 0);
+      setScrolled(window.scrollY > 75 || (window.innerWidth <= 768 && window.scrollY > 0));
     };
 
     window.addEventListener("scroll", handleScroll);
