@@ -56,14 +56,14 @@ const Navbar = () => {
 
         <div
           className={`${
-            !toggle ? "translate-x-[175px]" : "-translate-x-0"
-          } z-10 transform transition duration-300 ease-in-out sm:translate-x-0 p-6 bg-black-gradient absolute top-20 right-0 my-2 min-w-[140px] rounded-lg mt-20 `}
+            !toggle ? "translate-x-[100%]" : "-translate-x-0"
+          } z-10 transform transition duration-300 ease-in-out sm:translate-x-0 p-6 bg-black-gradient absolute pt-40 top-0 right-0 my-2 min-w-full h-[700px] rounded-lg mt-20 `}
         >
-          <ul className="list-none flex justify-end items-start flex-1 flex-col">
+          <ul className="list-none flex justify-start items-center flex-1 flex-col">
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`font-poppins font-medium cursor-pointer text-[16px] ${
+                className={`font-poppins font-medium cursor-pointer text-[20px] ${
                   active === nav.title ? "text-white" : "text-dimWhite"
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                 onClick={() => {
