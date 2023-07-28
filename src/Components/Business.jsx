@@ -26,7 +26,7 @@ const FeatureCard = ({ icon, title, content, index }) => (
 );
 
 const Business = () => (
-  <section id="features" className={layout.section}>
+  <section id="features" className={layout.section} sm:py-32 py-12 >
     <ScrollReveal.div
       animation="slide-in-bottom"
       className={layout.sectionInfo}
