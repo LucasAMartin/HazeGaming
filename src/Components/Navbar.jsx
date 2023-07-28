@@ -20,14 +20,6 @@ const Navbar = () => {
     };
   }, []);
 
-  const handleClick = (id) => {
-    setActive(id);
-    document.querySelector(`#${id}`).scrollIntoView({
-      behavior: 'smooth',
-      block: 'center',
-    });
-  };
-
   return (
     <nav className={`w-full flex py-6 justify-between items-center navbar ${scrolled ? "bg-fade" : ""}`}>
       <img src={logo} alt="haze" className="w-[128px] cursor-pointer" onClick={() => navigate('/')}/>
@@ -56,7 +48,7 @@ const Navbar = () => {
 
         <div
           className={`${
-            !toggle ? "translate-x-[100%]" : "-translate-x-0"
+            !toggle ? "translate-x-[-100%]" : "-translate-x-0"
           } z-10 transform transition duration-300 ease-in-out sm:translate-x-0 p-6 bg-black-gradient absolute pt-40 top-0 right-0 my-2 min-w-full h-[700px] rounded-lg mt-20 `}
         >
           <ul className="list-none flex justify-start items-center flex-1 flex-col">
