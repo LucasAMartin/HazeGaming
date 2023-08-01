@@ -10,7 +10,10 @@ Welcome to Haze Gaming, a modern and user-friendly gaming platform built with Re
 
 ## Built With
 
-- React: A JavaScript library for building user interfaces.
+- React
+- TailwindCSS
+- React Router
+- React Grid Layout
 
 ## Running Locally
 
