@@ -20,7 +20,7 @@ const gameTitles = [
 shuffleArray(gameTitles);
 
 const LibraryDisplay = () => (
-    <div className="flex flex-wrap gap-3 mt-4 w-full h-full">
+    <div className="flex flex-wrap gap-3 mt-4 w-full h-full justify-center">
       {gameTitles.map((title) => {
         const asset = assetLinks.find((asset) => asset.title === title);
         return (
@@ -28,8 +28,7 @@ const LibraryDisplay = () => (
             key={title}
             src={asset.src}
             alt={title}
-            style={{ width: "200px", height: "300px" }}
-            className="hover:scale-110 duration-200 object-cover rounded-md"
+            className="sm:w-[200px] sm:h-[300px] w-[150px] h-[250px] hover:scale-110 duration-200 object-cover rounded-md"
           />
         );
       })}
@@ -40,8 +39,7 @@ const LibraryDisplay = () => (
             key={title}
             src={asset.src}
             alt={title}
-            style={{ width: "200px", height: "300px" }}
-            className="hover:scale-110 duration-200 object-cover rounded-md"
+            className="sm:w-[200px] sm:h-[300px] w-[150px] h-[250px] hover:scale-110 duration-200 object-cover rounded-md"
           />
         );
       })}
@@ -52,8 +50,7 @@ const LibraryDisplay = () => (
             key={title}
             src={asset.src}
             alt={title}
-            style={{ width: "200px", height: "300px" }}
-            className="hover:scale-110 duration-200 object-cover rounded-md"
+            className="sm:w-[200px] sm:h-[300px] w-[150px] h-[250px] hover:scale-110 duration-200 object-cover rounded-md"
           />
         );
       })}
@@ -64,8 +61,7 @@ const LibraryDisplay = () => (
             key={title}
             src={asset.src}
             alt={title}
-            style={{ width: "200px", height: "300px" }}
-            className="hover:scale-110 duration-200 object-cover rounded-md"
+            className="sm:w-[200px] sm:h-[300px] w-[150px] h-[250px] hover:scale-110 duration-200 object-cover rounded-md"
           />
         );
       })}

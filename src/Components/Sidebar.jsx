@@ -63,7 +63,7 @@ const Sidebar = () => {
       <nav
         className={`${
           isOpen ? "translate-x-0" : "-translate-x-full"
-        } transform transition duration-300 ease-in-out sm:translate-x-0 flex flex-col p-6 pt-12 items-left gap-8 h-screen w-[11rem] bg-darkPurple sm:bg-transparent`}
+        } transform transition duration-300 ease-in-out sm:translate-x-0 flex flex-col p-6 mt-[-10px] items-left gap-8 h-screen w-[11rem] bg-darkPurple sm:bg-transparent`}
       >
         <ul className="list-none justify-center items-center flex-col text-white text-[14px] font-poppins">
           {sidebarLinks.map((nav) => (
