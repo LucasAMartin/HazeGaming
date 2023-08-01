@@ -76,7 +76,7 @@ const Grid = () => {
     <ResponsiveGridLayout
       className="layout"
       layouts={{ lg: layout }}
-      breakpoints={{ lg: 900 }}
+      breakpoints={{ lg: 1200 }}
       cols={{ lg: 14 }}
       margin={[10, 10]}
       rowHeight={160}
