@@ -16,11 +16,11 @@ const Haze = () => (
         <div
           className={`${styles.paddingX} ${styles.flexStart} flex-1 flex justify-center`}
         >
-          <div className={`w-[90%] sm:ml-[12%] h-full`}>
-            <div className="absolute z-[0] w-[80%] h-[90%] rounded-full purple__gradient top-0" />
-            <GameDisplay />
+            <div className={`w-[90%] sm:ml-[12%] h-full`}>
+              <div className="absolute z-[0] w-[80%] h-[90%] rounded-full purple__gradient top-0 " />
+              <GameDisplay />
+            </div>
           </div>
-        </div>
       </div>
     </div>
   </div>

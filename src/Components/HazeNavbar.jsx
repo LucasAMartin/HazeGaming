@@ -21,7 +21,7 @@ const HazeNavbar = ({message}) => {
         className="sm:w-[128px] w-[64px] cursor-pointer"
         onClick={() => navigate("/")}
       />
-      <h2 className="font-poppins font-semibold xs:text-[32px] text-[28px] text-white ml-[6.5rem] align-text-bottom"> {message} </h2>
+      <h2 className="font-poppins font-semibold xs:text-[32px] text-[28px] text-white ml-[6.5rem] align-text-bottom hidden sm:block sm:text-[20px] md:text-[28px]"> {message} </h2>
       <ul className="list-none flex justify-end items-center flex-1 sm:gap-8 gap-4">
         {navIcons.map((nav) => (
           <li
