@@ -7,7 +7,7 @@ const PlayButton = ({ styles, text }) => {
   return (
     <button
       type="button"
-      className={`py-4 px-6 font-poppins font-medium text-[18px] text-primary bg-purple-gradient hover:text-white rounded-[10px] mt-10 transition-colors duration-250 ${styles}`}
+      className={`py-4 px-6 font-poppins font-medium text-[18px] text-white bg-transparent border-2 border-brightPurple hover:text-black hover:bg-brightPurple rounded-[10px] mt-10 transition-colors duration-250 ${styles}`}
       onClick={() => navigate('/haze')}
     >
       {text || 'Get Started'}
