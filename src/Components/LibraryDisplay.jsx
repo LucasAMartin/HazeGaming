@@ -1,4 +1,4 @@
-import React from "react";
+import {React, useEffect, useState} from "react";
 import { witcherCover, tombRaiderCover, redDeadCover, skyrimCover, massEffectCover, gtaCover } from "../assets";
 
 
@@ -17,57 +17,40 @@ const gameTitles = [
   "Mass Effect",
   "Skyrim",
 ];
-shuffleArray(gameTitles);
 
-const LibraryDisplay = () => (
+const LibraryDisplay = () => {
+  const [shuffledGameTitles, setShuffledGameTitles] = useState([]);
+
+  useEffect(() => {
+    // Create an array with 4 separate copies of gameTitles and shuffle each of them
+    const repeatedGameTitles = Array(4).fill().map(() => {
+      const copy = [...gameTitles];
+      shuffleArray(copy);
+      return copy;
+    });
+
+    setShuffledGameTitles(repeatedGameTitles);
+  }, []);
+
+  return (
     <div className="flex flex-wrap gap-3 mt-4 w-full h-full justify-center">
-      {gameTitles.map((title) => {
-        const asset = assetLinks.find((asset) => asset.title === title);
-        return (
-          <img
-            key={title}
-            src={asset.src}
-            alt={title}
-            className="sm:w-[200px] sm:h-[300px] w-[150px] h-[250px] hover:scale-110 duration-200 object-cover rounded-md"
-          />
-        );
-      })}
-      {gameTitles.map((title) => {
-        const asset = assetLinks.find((asset) => asset.title === title);
-        return (
-          <img
-            key={title}
-            src={asset.src}
-            alt={title}
-            className="sm:w-[200px] sm:h-[300px] w-[150px] h-[250px] hover:scale-110 duration-200 object-cover rounded-md"
-          />
-        );
-      })}
-      {gameTitles.map((title) => {
-        const asset = assetLinks.find((asset) => asset.title === title);
-        return (
-          <img
-            key={title}
-            src={asset.src}
-            alt={title}
-            className="sm:w-[200px] sm:h-[300px] w-[150px] h-[250px] hover:scale-110 duration-200 object-cover rounded-md"
-          />
-        );
-      })}
-      {gameTitles.map((title) => {
-        const asset = assetLinks.find((asset) => asset.title === title);
-        return (
-          <img
-            key={title}
-            src={asset.src}
-            alt={title}
-            className="sm:w-[200px] sm:h-[300px] w-[150px] h-[250px] hover:scale-110 duration-200 object-cover rounded-md"
-          />
-        );
-      })}
+      {shuffledGameTitles.map((gameTitlesRow, index) =>
+        gameTitlesRow.map((title) => {
+          const asset = assetLinks.find((asset) => asset.title === title);
+          return (
+            <div key={`${title}-${index}`} >
+              <img
+                src={asset.src}
+                alt={title}
+                className="sm:w-[200px] sm:h-[300px] w-[150px] h-[250px] hover:scale-110 duration-200 object-cover rounded-md"
+              />
+            </div>
+          );
+        })
+      )}
     </div>
   );
-  
+};
 
 export default LibraryDisplay;
 
